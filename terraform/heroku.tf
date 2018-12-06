@@ -37,3 +37,21 @@ resource "heroku_pipeline_coupling" "production" {
   pipeline = "${heroku_pipeline.test-app.id}"
   stage    = "production"
 }
+
+# Create a hosted graphite, and configure the app to use it
+resource "heroku_addon" "hostedgraphite-staging" {
+  app  = "${heroku_app.staging.name}"
+  plan = "hostedgraphite"
+}
+
+# Create a hosted graphite, and configure the app to use it
+resource "heroku_addon" "hostedgraphite-ci" {
+  app  = "${heroku_app.ci.name}"
+  plan = "hostedgraphite"
+}
+
+# Create a hosted graphite, and configure the app to use it
+resource "heroku_addon" "hostedgraphite-production" {
+  app  = "${heroku_app.production.name}"
+  plan = "hostedgraphite"
+}

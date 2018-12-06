@@ -4,6 +4,7 @@ jobs:
   plan:
   - aggregate:
     - get: monitoring-app
+      trigger: true
     - get: monitoring-infra
   - task: mvn_build
     file: monitoring-infra/concourse/java/task.yml
@@ -16,6 +17,7 @@ jobs:
       app_name: ((heroku_app_name))
       heroku_email: ((heroku_email))
       heroku_api_token: ((heroku_api_key))
+      logz_token: ((logz_token))
 
 
 - name: infra

@@ -13,6 +13,7 @@ params:
     heroku_email:
     heroku_api_token:
     app_name:
+    logz_token:
 
 run:
   path: sh
@@ -28,4 +29,5 @@ run:
           login ${heroku_email}
           password ${heroku_api_token}
       EOF
+      heroku config:set logz_token=${logz_token} --app ${app_name}
       git push https://git.heroku.com/${app_name}.git master:refs/heads/master

@@ -1,4 +1,4 @@
 # Configure the Heroku provider
 provider "heroku" {
-  email = "${var.heroku_email}"
+  email = "daheva15@student.kristiania.no"
 }

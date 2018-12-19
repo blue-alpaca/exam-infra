@@ -9,7 +9,7 @@
     Jeg brukte derfor logger.warn i de andre, fordi meldingene da dukker opp.
     * Det ser ut til at loggingen kun fungerer fra appen deployet til Heroku.
 
-## Instruksjoner:
+## Instruksjoner for endring av filer:
 * Gi filen credentials_example.yml navnet credentials.yml og sett inn egne verdier.
 * Sett inn egne verdier i provider_heroku.tf, pipeline.yml, statuscake.tf, og variables.tf.
 

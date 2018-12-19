@@ -4,6 +4,7 @@
 * Basis pipeline
 * Overvåkning, varsling og Metrics
     * Jeg deaktiverte noen typer metrics for å ikke overskride grensen på 10.
+    * For at dette skal virke lokalt må System.getenv("HOSTEDGRAPHITE_APIKEY") i GraphiteMetricsConfig byttes ut med den faktiske  nøkkelen.
 * Applikasjonslogger 
     * Av en eller annen grunn fungerte logger.info bare i welcome-metoden.
     Jeg brukte derfor logger.warn i de andre, fordi meldingene da dukker opp.

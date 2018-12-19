@@ -1,6 +1,6 @@
-#Eksamen i PGR301
+# Eksamen i PGR301
 
-##Oppgaver løst:
+## Oppgaver løst:
 * Basis pipeline
 * Overvåkning, varsling og Metrics
     * Jeg deaktiverte noen typer metrics for å ikke overskride grensen på 10.
@@ -9,7 +9,7 @@
     Jeg brukte derfor logger.warn i de andre, fordi meldingene da dukker opp.
     * Det ser ut til at loggingen kun fungerer fra appen deployet til Heroku.
 
-##Instruksjoner:
+## Instruksjoner:
 * Gi filen credentials_example.yml navnet credentials.yml og sett inn egne verdier.
 * Sett inn egne verdier i provider_heroku.tf, pipeline.yml, statuscake.tf, og variables.tf.
 
